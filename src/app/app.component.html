@@ -1,4 +1,4 @@
-<favorite></favorite>
+<favorite [is-favorite]="post.isFavorite" (change)="onFavoriteChanged($event)"></favorite>
 
 <input type="text" [(ngModel)]="title">
 <br />
